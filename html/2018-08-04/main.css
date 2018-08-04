@@ -5,9 +5,12 @@
 .anhdaidien{
     size: 400px; margin-right: 50px; 
 }
-.doan_gioi_thieu{
+.khung_ben_phai{
      padding: 0px;
      border: 3px black dashed ;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
 
 }
 .list{
@@ -25,5 +28,6 @@
 }
 .main{
     display: flex;
+    justify-content: center;
 }
 
