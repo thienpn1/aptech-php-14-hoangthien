@@ -1,0 +1,27 @@
+.height100{
+    height: 100px;
+}
+.height400{
+    height: 300px;
+}
+.height{
+    height: 100vh;
+}
+.bogachduoi:hover{
+    text-decoration:none !important;
+    
+}
+.form-signin {
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+  }
+  .ic{
+      height: 30px;
+      width: 30px;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Playfair Display", Georgia, "Times New Roman", serif !important;
+  }
+  
