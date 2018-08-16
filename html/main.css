@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 @media screen and (min-width: 0px) {
     h1 {
         color: red;
@@ -10,6 +13,13 @@
 }
 @media screen and (min-width: 1200px) {
     h1 {
-        color: yellow;
+        color: gray;
     }
+}
+.noi{
+    
+    position: fixed;
+box-sizing: border-box;
+    z-index:200;
+
 }
