@@ -1,6 +1,33 @@
+*{
+    box-sizing: border-box;
+}
 #khung_1{
-    border: 2px;
-    border-color: blueviolet;
-    background-color: aquamarine;
+    border:solid;
+    border-width: 3px;
+    border-color: blue;
+    background: red;
+    width: 1000px;
+    height: 100px;
+    transition-property:height;
+    transition-duration: 2s;
+    
+}
+
+#anh_1{
+    height: 30px;
+    width: 30px;
+}
+.noidung{
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+#nut{
+   
+    height: 48px;
+    width: 48px;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background: url(./icon.png);
+
     
 }
