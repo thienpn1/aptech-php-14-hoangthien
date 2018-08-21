@@ -8,6 +8,8 @@
     <link rel="stylesheet" type="text/css" media="screen" href="./bootstrap.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="./style.css" />
     <title>Album example</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </head>
 
@@ -50,7 +52,9 @@
                     <h4 class="text-white ml-3">Album</h4>
                 </div>
                 <div>
-                    <input id="nut" type="button" value="" class="btn btn-outline-dark" onclick="test()">
+                    <button id="nut" onclick="test()">
+                    </button>
+                            
                 </div>
             </div>
         </div>
@@ -184,19 +188,16 @@
     </div>
     <div class="container-fluid px-5">
         <div class="row d-flex justify-content-center">
-            <div class="col-8 d-flex justify-content-between">
-                <div class="col-8 d-flex flex-column align-items-start">
+            <div class="col-8 d-flex justify-content-between align-items-center">
+                <div class="col-10 d-flex flex-column align-items-start">
                     <p>
                         Album example is © Bootstrap, but please download and customize it for yourself!
                     </p>
                     <p>
-                        New to Bootstrap?
-                        <a href="#">Visit the homepage</a>
-                        <p>or read out</p>
-                        <a href="#">getting started guide.</a>
+                        New to Bootstrap?<span><a href="#">Visit the homepage</a></span> or read out <span><a href="#">getting started guide.</a></span> 
                     </p>
                 </div>
-                <div class="col-4 text-right">
+                <div class="col-2 text-right">
                     <a href="#">Back to top</a>
                 </div>
             </div>

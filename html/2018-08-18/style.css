@@ -25,9 +25,17 @@
    
     height: 48px;
     width: 48px;
+    background: url(./icon.png);
     background-repeat: no-repeat;
     background-size: auto;
-    background: url(./icon.png);
+    border: none;
+    height: 32px;
+    width: 32px;
+    
+
 
     
+}
+#hidden_div{
+    transition: max-height 0.2s ease-out;
 }
