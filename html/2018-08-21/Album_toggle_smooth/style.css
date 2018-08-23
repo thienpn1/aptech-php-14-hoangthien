@@ -23,4 +23,14 @@
     
 }
 #hidden_div{
-    transition: max-height 0.2s ease-out;}
+    transition: max-height 0.2s ease-out;
+}
+#hidden_me{
+    justify-content: space-between;
+    display: flex;
+    max-width: 50%;
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    
+}

@@ -14,34 +14,37 @@
 <body>
     <div id="header" class="container-fluid bg-dark mb-5">
         <div class="row d-flex flex-column align-items-center">
-            <div id="hidden_div" class="col-6 d-flex justify-content-between">
-                <div class="col-8 py-2 ">
-                    <div class="d-flex flex-column">
-                        <h3 class="text-white">About</h3>
+            <div id="hidden_me" class="">
+                <div id="hidden_div" class="col-12 d-flex justify-content-between">
+                    <div class="col-8 py-2 ">
+                        <div class="d-flex flex-column">
+                            <h3 class="text-white">About</h3>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <p class="text-muted">
+                                Add some information about the album below, the author, or any other background context. Make it a few sentences long so
+                                folks can pick up some informative tidbits. Then, link them off to some social networking
+                                sites or contact information.
+                            </p>
+                        </div>
                     </div>
-                    <div class="d-flex flex-column">
-                        <p class="text-muted">
-                            Add some information about the album below, the author, or any other background context. Make it a few sentences long so
-                            folks can pick up some informative tidbits. Then, link them off to some social networking sites
-                            or contact information.
-                        </p>
+                    <div class="col-3 py-2 d-flex flex-column align-items-start">
+                        <h3 class="text-white">Contact</h3>
+                        <ul class="list-unstyled">
+                            <li class="text-white">
+                                <a href="#" class="text-white">Follow on Twitter</a>
+                            </li>
+                            <li class="text-white">
+                                <a href="#" class="text-white">Like on Facebook</a>
+                            </li>
+                            <li class="text-white">
+                                <a href="#" class="text-white">Email me</a>
+                            </li>
+                        </ul>
                     </div>
-                </div>
-                <div class="col-3 py-2 d-flex flex-column align-items-start">
-                    <h3 class="text-white">Contact</h3>
-                    <ul class="list-unstyled">
-                        <li class="text-white">
-                            <a href="#" class="text-white">Follow on Twitter</a>
-                        </li>
-                        <li class="text-white">
-                            <a href="#" class="text-white">Like on Facebook</a>
-                        </li>
-                        <li class="text-white">
-                            <a href="#" class="text-white">Email me</a>
-                        </li>
-                    </ul>
                 </div>
             </div>
+
             <div id="show_div" class="col-6 d-flex justify-content-between py-2">
                 <div class="d-flex justify-content-start">
                     <div>
@@ -206,17 +209,11 @@
             </div>
         </div>
     </div>
-    <script src="./ham_js.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script>
-        var x = document.getElementById('hidden_div'),
-            temp;
-        $(document).ready(function () {
-            temp = document.getElementById('hidden_div');
-        });
         $('#nut').click(function (e) {
 
-            $('#hidden_div').hide(1000);
+            $('#hidden_me').slideToggle(500);
 
             //$('#hidden_div').hide();
             console.log('nut duoc nhan');

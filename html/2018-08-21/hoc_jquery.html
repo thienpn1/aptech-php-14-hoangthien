@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <div>
+    <div id="hide">
         <h1>Hello world</h1>
         <h1>world</h1>
         <div id="flip">Click to slide down panel</div>
@@ -25,16 +25,16 @@
     <script>
         $(document).ready(function () {
             $("#flip").mouseover(function () {
-                $("#panel").slideToggle("slow");
+                $("#panel").toggle("slow");
             });
-           $(an).click(function () { 
-               
-               $('#panel').hide(1000);
-           });
-           $(hien).click(function () { 
-               
-               $('h1').show(1000);
-           });
+            $(an).click(function () {
+
+                $('#panel').hide(1000);
+            });
+            $(hien).click(function () {
+
+                $('h1').show(1000);
+            });
         });
     </script>
 </body>
