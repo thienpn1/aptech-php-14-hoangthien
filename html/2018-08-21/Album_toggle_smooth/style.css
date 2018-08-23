@@ -1,0 +1,26 @@
+*{
+    box-sizing: border-box;
+}
+
+#anh_1{
+    height: 30px;
+    width: 30px;
+}
+.noidung{
+    font-size: 1.25rem;
+    font-weight: 300;
+}
+#nut{
+   
+    height: 48px;
+    width: 48px;
+    background: url(./icon.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    border: none;
+    height: 32px;
+    width: 32px;
+    
+}
+#hidden_div{
+    transition: max-height 0.2s ease-out;}

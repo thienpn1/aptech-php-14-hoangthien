@@ -8,15 +8,13 @@
     <link rel="stylesheet" type="text/css" media="screen" href="./bootstrap.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="./style.css" />
     <title>Album example</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 </head>
 
 <body>
     <div id="header" class="container-fluid bg-dark mb-5">
         <div class="row d-flex flex-column align-items-center">
-            <div id="hidden_div" class="col-6 d-flex justify-content-between collapse show ">
+            <div id="hidden_div" class="col-6 d-flex justify-content-between">
                 <div class="col-8 py-2 ">
                     <div class="d-flex flex-column">
                         <h3 class="text-white">About</h3>
@@ -52,7 +50,7 @@
                     <h4 class="text-white ml-3">Album</h4>
                 </div>
                 <div>
-                    <button id="nut" onclick="" type="button" data-toggle="collapse" data-target="#hidden_div" aria-expanded="false" aria-controls="hidden_div" >
+                    <button id="nut" type="button">
                     </button>
 
                 </div>
@@ -209,11 +207,22 @@
         </div>
     </div>
     <script src="./ham_js.js"></script>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="./jquery-slim.min.js"><\/script>')</script>
-    <script src="../../assets/js/vendor/popper.min.js"></script>
-    <script src="../../dist/js/bootstrap.min.js"></script>
-    <script src="../../assets/js/vendor/holder.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        var x = document.getElementById('hidden_div'),
+            temp;
+        $(document).ready(function () {
+            temp = document.getElementById('hidden_div');
+        });
+        $('#nut').click(function (e) {
+
+            $('#hidden_div').hide(1000);
+
+            //$('#hidden_div').hide();
+            console.log('nut duoc nhan');
+
+        });
+    </script>
 </body>
 
 </html>
