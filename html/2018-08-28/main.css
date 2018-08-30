@@ -1,0 +1,37 @@
+a{
+    text-align: center;
+    
+}
+#top_banner a:hover {
+    color:white !important;
+}
+#top_banner{
+    height: 50px !important;
+    z-index: 2000;
+}
+#left_banner{
+    margin-left: 0;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+    /* position: fixed !important; */
+    z-index: 1000
+
+}
+#main{
+    height: 700px;
+}
+ul li{
+    list-style: none;
+}
+#left_banner a{
+    color: black !important;
+    
+}
+#left_banner ul{
+    position: sticky;
+    
+}
+.icon{
+    height: 20px;
+    width: 20px;
+}

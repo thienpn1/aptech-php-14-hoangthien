@@ -6,19 +6,84 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Hoc </title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="./bootstrap.css" >
-    
+    <link rel="stylesheet" type="text/css" media="screen" href="./bootstrap.css">
+
 </head>
 
 <body>
     <h1 id="head"></h1>
-    <button id="btn1" onclick="load()">
+    <button id="btn1" onclick="">
         SSS
     </button>
     <table id="tbl" class="table table-bordered table-hover">
+        <thead class="thead-dark" id="cottieude">
+            <tr>
+                <th class="text-center">ID</th>
+                <th class="text-center">Name</th>
+                <th class="text-center">Email</th>
+            </tr>
+        </thead>
+        <tbody id="tbl_body">
 
+        </tbody>
     </table>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.js"></script>
+    <script>
+        $(document).ready(function () {
+            load();
+            $('table').dblclick(function (e) {
+                e.stopPropagation();
+                $('td').on('dblclick', function (e) {
+                    
+                    
+                    var noidung = $(this).text();
+                    var input_eles = $(this).find('input');
+                    console.log(input_eles.length);
+                    if (input_eles.length == 0) {
+                        $(this).empty();
+                        $("<input>")
+                            .attr('type', 'text')
+                            .val(noidung)
+                            .blur(function () {
+                                closeInput(this);
+                            })
+                            .appendTo($(this))
+                            .focus();
+                        console.log(noidung + ' xxx');
+                        $(noidung).appendTo(this);
+                    } else  {
+                      $(this).blur(function (e) { 
+                          e.preventDefault();
+                          
+                      });
+                    }
+
+                });
+
+            });
+            // $('tbody').click(function (e) {
+            //     e.stopPropagation();
+            //     $('td').on('click', function (e) {
+            //         console.log($(this).text() + ' xxx');
+
+            //     });
+
+            // });
+
+        });
+
+        function closeInput(elm) {
+            var value = $(elm).find('input').val();
+            $(elm).empty().text(value);
+
+            // $(elm).bind("dblclick", function () {
+            //     newInput(elm);
+            // });
+        }
+    </script>
+
     <script src="./js.js"></script>
-    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+
 </body>
+
 </html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>DashBoard</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./bootstrap.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="./main.css" />
+
+</head>
+
+<body>
+    <div id="top_banner"  class="container-fluid navbar p-0 bg-dark d-flex flex-column">
+        <div class="row p-0 d-flex w-100">
+            <div class="col-12 p-1 d-flex flex-row  shadow h-100">
+                <div class="p-2 navbar-brand col-2 p-0 m-0 d-flex align-items-center  ">
+                    <a class="text-white text-capitalize ml-3 ">
+                        Company Name
+                    </a>
+                </div>
+                <div class="h-100 col-9 d-flex align-items-center ">
+                    <input class="col-12 form-control form-control mr-sm-2" type="text" placeholder="Search">
+                </div>
+                <div class="col-1 d-flex align-items-center">
+                    <a class="text-muted" style="text-decoration:none;" href="#">Sign out</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="main" class="container-fluid">
+            <div class="row p-0  w-100 h-100 ">
+                    <div id="left_banner" class="col-2 d-flex flex-column ">
+                        <ul class=" p-0 d-flex flex-column align-items-start w-100 ">
+                            <li class="nav-item active text-info font-weight-normal font-weight-light"><a class="nav-link" href="#"><img
+                                        src="./icon/icons8-home-page-50.png" class="icon" alt="" srcset=""> Dashboard</a></li>
+                            <li class="nav-item text-dark font-weight-normal font-weight-light"><a class="nav-link" href="#"><img
+                                        src="./icon/document.png" class="icon" alt="" srcset=""> Order</a></li>
+                            <li class="nav-item text-dark font-weight-normal font-weight-light"><a class="nav-link" href="#"><img
+                                        src="./icon/stock.png" alt="" class="icon"> Product</a></li>
+                            <li class="nav-item text-dark font-weight-normal font-weight-light"><a class="nav-link" href="#"><img
+                                        src="./icon/chart.png" alt="" class="icon"> Report</a></li>
+                        </ul>
+                        <h6 class="mt-3 d-flex flex-row justify-content-between w-100">
+                            <span class="text-muted">
+                                Saved reports
+                            </span>
+                            <a href=""><img src="./icon/plus.png" alt="" class="icon"></a>
+                        </h6>
+                        <ul class=" p-0 d-flex flex-column align-items-start w-100">
+                            <li class="nav-item active text-info font-weight-normal font-weight-light"><a class="nav-link" href="#"><img
+                                        src="./icon/document_not_empty.png" class="icon" alt="" srcset=""> Current month</a></li>
+                            <li class="nav-item text-dark font-weight-normal font-weight-light"><a class="nav-link" href="#"><img
+                                        src="./icon/document_not_empty.png" class="icon" alt="" srcset=""> Last quarter</a></li>
+                            <li class="nav-item text-dark font-weight-normal font-weight-light"><a class="nav-link" href="#"><img
+                                        src="./icon/document_not_empty.png" alt="" class="icon"> Social engagement</a></li>
+                            <li class="nav-item text-dark font-weight-normal font-weight-light"><a class="nav-link" href="#"><img
+                                        src="./icon/document_not_empty.png" alt="" class="icon"> Year-end sale</a></li>
+                        </ul>
+                    </div>
+                    <div id="main_compoment" class="col-10 d-flex flex-column p-3">
+                        <div id="main_header" class="d-flex border-bottom justify-content-between ">
+                            <h2><span>Dashboard</span></h2>
+                            <div class="btn-toolbar p-2">
+                                <div class="btn-group mr-2">
+                                    <button type="button" class="btn btn-outline-dark">Share</button>
+                                    <button type="button" class="btn btn-outline-dark">Export</button>
+                                </div>
+                                <button type="button" class="btn btn-outline-dark">This week</button>
+                            </div>
+                        </div>
+        
+                    </div>
+                </div>
+    </div>
+</body>
+
+</html>
